@@ -1,33 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Define custom font faces */
+@font-face {
+  font-family: "SF PRO Display";
+  src: url("/public/assets/font/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF");
+  font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.ff_Sf_pro {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.ff_Inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* Component styles */
+@layer components {
+
+  /* Styles for mobile navigation links */
+  .mobile-nav-li {
+    @apply font-medium text-black tracking-[-0.38px] sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200;
   }
+
+  /* Styles for mobile navigation overlay */
+  .mobile-nav-overlay {
+    @apply fixed px-4 items-center justify-center bg-black lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-[101px] transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%];
+  }
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+/*slick-dots  - initial-state*/
+.image_slider .slick-dots li.slick-active button {
+  border-radius: 53px !important;
+  background: #fff !important;
+  height: 11.25% !important;
+  width: 9px !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/*Hide-slick-button and before dots*/
+.image_slider .slick-dots li>button:before,
+.slick-dots li button {
+  display: none !important;
+}
+
+/*slick-active-dots*/
+.image_slider .slick-dots li.slick-active button,
+.slick-dots li.slick-active {
+  background-color: #fff !important;
+  max-width: 11.25% !important;
+}
+
+/*slick-Initial-dots*/
+.image_slider .slick-dots li button,
+.slick-dots li {
+  background-color: #000 !important;
+  width: 11.25% !important;
+  height: 9px !important;
+  border-radius: 53px !important;
+}
+
+.image_slider .slick-initialized .slick-slide {
+  display: flex !important;
+  background: #000 !important;
+}
+
+.image_slider .slick-dots {
+  position: absolute;
+  z-index: 10;
+  bottom: 50px !important;
+  display: block;
+  width: 100%;
+  max-width: 1376px !important;
+  padding: 0;
+  margin: 0 auto !important;
+  list-style: none;
+  text-align: center;
+}
+
+@media (max-width:798.99px) {
+  .image_slider .slick-dots li button,
+    .slick-dots li {
+      background-color: #000 !important;
+      width: 10.25% !important;
+      height: 9px !important;
+      border-radius: 53px !important;
+    }
+}
+@media (max-width:639.98px) {
+
+  .image_slider .slick-dots li button,
+  .slick-dots li {
+    background-color: #000 !important;
+    width: 9% !important;
+    height: 9px !important;
+    border-radius: 53px !important;
   }
 }

@@ -7,10 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        Inter: "Inter, sans-serif",
+        SfPro: "SF Pro Display , sans-serif",
+      },
+      fontSize: {
+        
+        "2xl": "22px",
+        "3xl":"24px",
+        "4xl": "40px",
+        "5xl": "49px",
+        "6xl": "50px",
+        "7xl": "53px",
+        "8xl": "87px",
+        "9xl": "90px",
       },
     },
   },
