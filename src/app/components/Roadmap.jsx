@@ -1,13 +1,8 @@
 import React from "react";
-import ButtonMain from "./common/button/ButtonMain";
 
 const Roadmap = () => {
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
-      className=" mb-[101px]"
-    >
+    <div className=" mb-[101px]">
       <div className="container xl:max-w-[1440px] 2xl:max-w-[1356px] mx-auto px-4 2xl:px-0 bg-black md:pt-[190px] pb-[92px] md:pb-[116px] relative">
         <h2 className="text-center font-black font-Inter text-[47px] leading-[57px] xl:text-9xl xl:leading-[109px] text-white pt-[43px] md:pt-0">
           ROADMAP

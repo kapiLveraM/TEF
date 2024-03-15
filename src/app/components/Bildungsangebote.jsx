@@ -11,7 +11,7 @@ const Bildungsangebote = () => {
         height={1336}
         src="/assets/images/bildungsangebote/bildschirmfoto-map.webp"
         alt="hero"
-        className=" hidden sm:block xl:min-h-[928px]"
+        className=" hidden sm:block xl:min-h-[928px] w-full"
       />
       <Image
         sizes="100vw"
