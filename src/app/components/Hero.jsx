@@ -26,13 +26,15 @@ const Hero = () => {
         <div className=" absolute w-full z-50">
           <NavBar />
         </div>
-        <div className="!absolute z-20 top-[600px] w-full px-4">
+      </div>
+      <div className="!absolute z-20 bottom-[70px] w-full px-4">
+        <div className=" relative container max-w-[1376px] px-4 !mx-auto xl:px-0">
           <div className=" hidden sm:flex justify-between">
             <div className=" flex gap-[10px]">
               <ButtonMain type="submit" title="Jetzt Anfragen" />
               <ButtonWhite type="submit" title="PDF DOWNLOAD" />
             </div>
-            <div className=" pr-11 xl:pr-0 back_to_top">
+            <div className=" absolute right-0 top-[-60px] pr-11 xl:pr-0 back_to_top">
               <HeroArrow />
             </div>
           </div>

@@ -3,26 +3,25 @@ import React from "react";
 const Roadmap = () => {
   return (
     <div className=" mb-[101px]">
-      <div className="container xl:max-w-[1440px] 2xl:max-w-[1356px] mx-auto px-4 2xl:px-0 bg-black md:pt-[190px] pb-[92px] md:pb-[116px] relative">
+      <div className="container max-w-[1371px] mx-auto px-4 2xl:px-0 bg-black md:pt-[190px] pb-[92px] md:pb-[116px] relative">
         <h2 className="text-center font-black font-Inter text-[47px] leading-[57px] xl:text-9xl xl:leading-[109px] text-white pt-[43px] md:pt-0">
           ROADMAP
         </h2>
-        <div className=" max-w-[425px] sm:max-w-[100%]">
+        <div className=" max-w-[425px] sm:max-w-[100%] h-[600px] md:h-[1000px] overflow-y-scroll roadmap_scroll">
           <div className=" ps-9 flex justify-center gap-[38px] md:gap-[54px] pt-[95px] xl:pt-[132px]">
-            <div className=" h-[665px] md:h-[731px] w-1 bg-white relative">
+            <div className=" h-[1200px] md:h-[866px] w-1 bg-white relative">
               <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute left-[-7px] md:left-[-10px]"></div>
-              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[27%] md:top-[29%] left-[-7px] md:left-[-10px]"></div>
-              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[48.5%] md:top-[47%] left-[-7px] md:left-[-10px]"></div>
-              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[64.5%] md:top-[64.5%] left-[-7px] md:left-[-10px]"></div>
-              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[77.5%] md:top-[79.5%] left-[-7px] md:left-[-10px]"></div>
+              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[15%] md:top-[24%] left-[-7px] md:left-[-10px]"></div>
+              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[27%] md:top-[40%] left-[-7px] md:left-[-10px]"></div>
+              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[35%] md:top-[55%] left-[-7px] md:left-[-10px]"></div>
+              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[43%] md:top-[67.5%] left-[-7px] md:left-[-10px]"></div>
+              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[55%] left-[-7px] md:left-[-10px]"></div>
+              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[43%] md:top-[81.5%] left-[-7px] md:left-[-10px]"></div>
+              <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute top-[67%] md:top-[81.5%] left-[-7px] md:left-[-10px]"></div>
               <div className=" w-4 h-4 md:w-[23px] md:h-[23px] bg-white rounded-full absolute bottom-0 left-[-7px] md:left-[-10px]"></div>
             </div>
             <div className=" mt-0">
-              <div
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className=" max-w-[740px]"
-              >
+              <div className=" max-w-[740px]">
                 <p className=" font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
                   In Kontakt Treten
                 </p>
@@ -36,11 +35,7 @@ const Roadmap = () => {
                   </button>
                 </div>
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="800"
-                className=" max-w-[740px] mt-8 md:mt-[42px]"
-              >
+              <div className=" max-w-[740px] mt-8 md:mt-[42px]">
                 <p className="font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
                   Persönliches Kennenlernen
                 </p>
@@ -50,11 +45,7 @@ const Roadmap = () => {
                   Pläne Besprechen.
                 </p>
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                className=" max-w-[740px] mt-8 md:mt-[42px]"
-              >
+              <div className=" max-w-[740px] mt-8 md:mt-[42px]">
                 <p className="font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
                   Vorvertrag Unterzeichnens
                 </p>
@@ -63,11 +54,7 @@ const Roadmap = () => {
                   einen vorvertrag unterzeichenen.
                 </p>
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1400"
-                className=" max-w-[740px] mt-8 md:mt-[42px]"
-              >
+              <div className=" max-w-[740px] mt-8 md:mt-[42px]">
                 <p className=" font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
                   Bau vertrag + Anzahlung
                 </p>
@@ -75,11 +62,7 @@ const Roadmap = () => {
                   Anzahlung über 280k
                 </p>
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1600"
-                className=" max-w-[740px] mt-8 md:mt-[42px]"
-              >
+              <div className=" max-w-[740px] mt-8 md:mt-[42px]">
                 <p className="font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
                   Beginn der Bauarbeiten
                 </p>
@@ -89,11 +72,7 @@ const Roadmap = () => {
                   dolorlorem Ipsum dolor
                 </p>
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1800"
-                className=" max-w-[740px] mt-8 md:mt-[42px]"
-              >
+              <div className=" max-w-[740px] mt-8 md:mt-[42px]">
                 <p className="font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
                   Beginn der Bauarbeiten
                 </p>
@@ -103,7 +82,27 @@ const Roadmap = () => {
                   dolorlorem Ipsum dolor
                 </p>
               </div>
-              <div className=" max-w-[740px] mt-8 md:mt-[42px] hidden md:block">
+              <div className=" max-w-[740px] mt-8 md:mt-[42px] ">
+                <p className="font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
+                  Beginn der Bauarbeiten
+                </p>
+                <p className="font-Inter text-white text-sm md:text-xl md:!leading-[24px] mt-2 md:mt-3">
+                  lorem Ipsum dolor lorem Ipsum dolorlorem Ipsum dolorlorem
+                  Ipsum dolorlorem Ipsum dolor lorem Ipsum dolorlorem Ipsum
+                  dolorlorem Ipsum dolor
+                </p>
+              </div>
+              <div className=" max-w-[740px] mt-8 md:mt-[42px] ">
+                <p className="font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
+                  Beginn der Bauarbeiten
+                </p>
+                <p className="font-Inter text-white text-sm md:text-xl md:!leading-[24px] mt-2 md:mt-3">
+                  lorem Ipsum dolor lorem Ipsum dolorlorem Ipsum dolorlorem
+                  Ipsum dolorlorem Ipsum dolor lorem Ipsum dolorlorem Ipsum
+                  dolorlorem Ipsum dolor
+                </p>
+              </div>
+              <div className=" max-w-[740px] mt-8 md:mt-[42px] md:hidden">
                 <p className="font-Inter font-bold text-white text-[17px] md:text-3xl md:leading-[29px]">
                   Beginn der Bauarbeiten
                 </p>
@@ -116,8 +115,8 @@ const Roadmap = () => {
             </div>
           </div>
         </div>
-        <div className=" flex justify-center">
-          <button className=" font-Inter font-bold text-[25px] leading-[31px] md:text-4xl md:leading-[49px] py-[15px] md:py-6 px-[23px] md:px-[93px] bg-white hover:bg-[#2A2A2A] hover:text-white transition-all duration-300 ease-in-out relative z-50">
+        <div className=" flex justify-center xl:mt-[-48px]">
+          <button className=" font-Inter font-bold text-[25px] leading-[31px] md:text-4xl md:leading-[49px] py-[15px] md:py-[28px] px-[23px] md:px-[93px] bg-white hover:bg-[#2A2A2A] hover:text-white transition-all duration-300 ease-in-out relative z-50">
             Mehr anzeigen
           </button>
         </div>

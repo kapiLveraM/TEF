@@ -7,7 +7,7 @@ const Footer = () => {
   // Defining Footer functional component
   const currentYear = new Date().getFullYear(); // Getting the current year
   return (
-    <div className="md:mt-[104px] sm:mt-20 mt-[31px] mb-[46px] max-w-[1376px] mx-auto xl:px-1 px-[35px]">
+    <div className="md:mt-[104px] sm:mt-20 mt-[31px] mb-[46px] max-w-[1371px] mx-auto xl:px-1 px-[35px]">
       {" "}
       {/* Container for the footer */}
       <div className=" flex flex-wrap mb-[64px]">

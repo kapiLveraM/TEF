@@ -27,17 +27,17 @@ const Eckwohnung = () => {
   };
   return (
     <div className=" mt-[33px] sm:mt-10 pb-[101px] lg:pb-[134px]">
-      <div className="container xl:max-w-[1356px] mx-auto px-4 2xl:px-0">
-        <div className=" flex flex-wrap items-center">
+      <div className="container max-w-[1371px] mx-auto px-4 2xl:px-0">
+        <div className=" flex flex-wrap ">
           <div
             data-aos="fade-right"
             data-aos-duration="500"
-            className=" lg:w-full xl:w-6/12"
+            className=" lg:w-full px-3 2xl:px-0 xl:w-6/12"
           >
             <h2 className=" font-Inter font-bold text-4xl leading-[48px] md:text-7xl md:leading-[64px]">
               Eckwohnung 1OG
             </h2>
-            <p className=" font-Inter font-normal leading-[26px] mt-6 sm:mt-[38px] text-2xl xl:max-w-[649px]">
+            <p className=" font-Inter font-normal leading-[26px] mt-6 sm:mt-12 text-2xl xl:max-w-[649px]">
               Lernen sie uns und das Projekt kennen, Bei einem persönlichen
               Gespräch werden wir alle möglichketine sowie die Detailierten
               Pläne Besprechen.Lernen sie uns und das Projekt kennen, Bei einem
@@ -55,13 +55,13 @@ const Eckwohnung = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="500"
-            className=" lg:w-full xl:w-6/12 mt-[51px] xl:mt-0"
+            className=" lg:w-full px-3 2xl:px-0 xl:w-6/12 mt-[51px] xl:mt-0"
           >
             <h2 className=" font-Inter font-bold text-4xl leading-[48px] md:text-7xl md:leading-[64px]">
               Mehr Details
             </h2>
             <div className="relative mt" id="faq">
-              <div className="max-w-[970px] mx-auto mt-[67px] xl:mt-10">
+              <div className="max-w-[970px] mx-auto mt-[67px] sm:min-h-[405px] sm:mt-0">
                 {/* Accordion items */}
                 {accordionContent.map((value, index) => (
                   <Accordion
