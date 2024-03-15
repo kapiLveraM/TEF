@@ -5,7 +5,14 @@ const LoremIpsum = () => {
   return (
     <div className=" pt-11 md:pt-[63px] ">
       <div className=" container xl:max-w-[1356px] mx-auto px-4 xl:px-0">
-        <h1 className=" font-Inter font-black text-6xl md:text-[70px] md:leading-[80px] leading-[60px] lg:leading-[87px] lg:text-8xl max-w-[835px]">
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className=" font-Inter font-black text-6xl md:text-[70px]
+          md:leading-[80px] leading-[60px] lg:leading-[87px] lg:text-8xl
+          max-w-[835px]"
+        >
+          {" "}
           Lorem ipsum dolor sit amet
         </h1>
       </div>
@@ -17,7 +24,7 @@ const LoremIpsum = () => {
           height={918}
           src="/assets/images/hero/bildschirmfotot.webp"
           alt="hero"
-          className=" w-full hidden sm:inline-block  sm object-cover"
+          className=" w-full hidden sm:inline-block xl:min-h-[706px] object-cover"
         />
         <Image
           sizes="100vw"

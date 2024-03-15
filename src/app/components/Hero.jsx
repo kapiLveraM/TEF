@@ -1,12 +1,12 @@
 "use client";
 import React, { useRef } from "react";
-import NavBar from "./navBar/NavBar";
 import { HeroSlider } from "./common/Helper";
 import Image from "next/image";
 import Slider from "react-slick";
 import ButtonMain from "./common/button/ButtonMain";
 import ButtonWhite from "./common/button/ButtonWhite";
 import { HeroArrow } from "./common/Icons";
+import NavBar from "./common/NavBar";
 const Hero = () => {
   const sliderRef = useRef(null);
   var imagesSlider = {
@@ -21,9 +21,22 @@ const Hero = () => {
   };
 
   return (
-    <div className=" relative ">
-      <div className=" fixed w-full z-50">
-        <NavBar />
+    <div className="relative">
+      <div className="relative container max-w-[1376px] px-4 !mx-auto xl:px-0">
+        <div className=" absolute w-full z-50">
+          <NavBar />
+        </div>
+        <div className="!absolute z-20 top-[600px] w-full px-4">
+          <div className=" hidden sm:flex justify-between">
+            <div className=" flex gap-[10px]">
+              <ButtonMain type="submit" title="Jetzt Anfragen" />
+              <ButtonWhite type="submit" title="PDF DOWNLOAD" />
+            </div>
+            <div className=" pr-11 xl:pr-0 back_to_top">
+              <HeroArrow />
+            </div>
+          </div>
+        </div>
       </div>
       <div className=" relative">
         <Slider {...imagesSlider} ref={sliderRef} className="image_slider ">
@@ -41,17 +54,6 @@ const Hero = () => {
             </div>
           ))}
         </Slider>
-        <div className="!absolute z-50 bottom-[303px] xl:bottom-[137px] w-full  container max-w-[1376px] px-4 !mx-auto xl:px-0">
-          <div className=" hidden sm:flex justify-between">
-            <div className=" flex gap-[10px]">
-              <ButtonMain type="submit" title="Jetzt Anfragen" />
-              <ButtonWhite type="submit" title="PDF DOWNLOAD" />
-            </div>
-            <div className=" pr-11 xl:pr-0">
-              <HeroArrow />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

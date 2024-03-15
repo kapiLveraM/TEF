@@ -22,6 +22,10 @@ module.exports = {
         "8xl": "87px",
         "9xl": "90px",
       },
+       screens: {
+      '2xl': '1382px',
+      // => @media (min-width: 1536px) { ... }
+    }
     },
   },
   plugins: [],
